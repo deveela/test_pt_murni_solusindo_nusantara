@@ -1,0 +1,7 @@
+.m2_local/
+target/
+.project
+.classpath
+.settings/
+bin/
+.idea/

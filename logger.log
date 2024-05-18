@@ -1,0 +1,462 @@
+2024-05-18 20:14:33 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2024-05-18 20:14:33 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2024-05-18 20:14:33 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2024-05-18 20:14:33 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2024-05-18 20:14:33 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.5.Final
+2024-05-18 20:14:33 DEBUG Environment:199 - HHH000206: hibernate.properties not found
+2024-05-18 20:14:33 DEBUG Configuration:742 - Building session factory using internal StandardServiceRegistryBuilder
+2024-05-18 20:14:33 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2024-05-18 20:14:33 DEBUG Configuration:672 - Building session factory using provided StandardServiceRegistry
+2024-05-18 20:14:33 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2024-05-18 20:14:33 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2024-05-18 20:14:33 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@4bbcc89e
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@4bbcc89e
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4bbcc89e
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@43326138
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@422240a8
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration yes_no -> org.hibernate.type.YesNoType@19e68cd7
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@3cc9cdaf
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@3cc9cdaf
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3cc9cdaf
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration character -> org.hibernate.type.CharacterType@4f60e6af
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration char -> org.hibernate.type.CharacterType@4f60e6af
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4f60e6af
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@2e46e4d1
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@2e46e4d1
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@2e46e4d1
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration integer -> org.hibernate.type.IntegerType@50bf183d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration int -> org.hibernate.type.IntegerType@50bf183d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@50bf183d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@17f10f35
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@17f10f35
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@17f10f35
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@299b2d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@299b2d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@299b2d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@6faa4750
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@6faa4750
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6faa4750
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@22f93aaa
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@22f93aaa
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3422feff
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3422feff
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration string -> org.hibernate.type.StringType@1056b4bb
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.String -> org.hibernate.type.StringType@1056b4bb
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@42ce959f
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@323d541d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration url -> org.hibernate.type.UrlType@18e61014
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@18e61014
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration Duration -> org.hibernate.type.DurationType@69052766
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@69052766
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration Instant -> org.hibernate.type.InstantType@254d955
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@254d955
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@2c282f9c
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@2c282f9c
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@32f8e9e3
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@32f8e9e3
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@24276f53
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@24276f53
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@327a11cd
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@327a11cd
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@5b9c419b
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@5b9c419b
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@71698047
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@71698047
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration date -> org.hibernate.type.DateType@506f4fa5
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@506f4fa5
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration time -> org.hibernate.type.TimeType@57bd4bcf
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@57bd4bcf
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration timestamp -> org.hibernate.type.TimestampType@2cecb66b
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2cecb66b
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2cecb66b
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2b20805d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration calendar -> org.hibernate.type.CalendarType@5208e608
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@5208e608
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@5208e608
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2ddba0e3
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@74151134
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration locale -> org.hibernate.type.LocaleType@5acd516a
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5acd516a
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration currency -> org.hibernate.type.CurrencyType@979b245
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@979b245
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@11b87b81
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@11b87b81
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration class -> org.hibernate.type.ClassType@642a90f5
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@642a90f5
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@31c750e9
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@31c750e9
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2a6fda7b
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration binary -> org.hibernate.type.BinaryType@56c4bd48
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration byte[] -> org.hibernate.type.BinaryType@56c4bd48
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration [B -> org.hibernate.type.BinaryType@56c4bd48
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@68de5013
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@68de5013
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@68de5013
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration row_version -> org.hibernate.type.RowVersionType@19247177
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration image -> org.hibernate.type.ImageType@c85e5a1
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration characters -> org.hibernate.type.CharArrayType@28d12838
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration char[] -> org.hibernate.type.CharArrayType@28d12838
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration [C -> org.hibernate.type.CharArrayType@28d12838
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6f902ff5
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6f902ff5
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6f902ff5
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration text -> org.hibernate.type.TextType@7d762446
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration ntext -> org.hibernate.type.NTextType@27e70ce5
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration blob -> org.hibernate.type.BlobType@5e4a7d42
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5e4a7d42
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5e4c3d6d
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration clob -> org.hibernate.type.ClobType@4f725f9c
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4f725f9c
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration nclob -> org.hibernate.type.NClobType@174c961f
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@174c961f
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@355de7c6
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@50b23446
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration serializable -> org.hibernate.type.SerializableType@597182b8
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration object -> org.hibernate.type.ObjectType@3124175f
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3124175f
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5f1a5755
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@aa7a383
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@18c98837
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7fc2e08e
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@72efb0dc
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4563aeb9
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@113f0e12
+2024-05-18 20:14:33 DEBUG BasicTypeRegistry:157 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@79915a2b
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2024-05-18 20:14:33 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2024-05-18 20:14:34 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : MySQL
+    version : 8.0.36-0ubuntu0.22.04.1
+      major : 8
+      minor : 0
+2024-05-18 20:14:34 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.28 (Revision: 7ff2161da3899f379fb3171b6538b191b1c5c7e2)
+      major : 8
+      minor : 0
+2024-05-18 20:14:34 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2024-05-18 20:14:34 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-18 20:14:34 DEBUG IdentifierHelperBuilder:119 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2024-05-18 20:14:34 DEBUG IdentifierHelperBuilder:197 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2024-05-18 20:14:34 DEBUG TypeConfiguration$Scope:149 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@41b26e0e] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@48400ec3]
+2024-05-18 20:14:34 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2024-05-18 20:14:34 DEBUG AnnotationBinder:546 - Binding entity from annotated class: test.msn.Entities.Users1
+2024-05-18 20:14:34 DEBUG Ejb3Column:227 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2024-05-18 20:14:34 DEBUG EntityBinder:431 - Import with entity name Users1
+2024-05-18 20:14:34 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=msn, schema=null}, physicalName=Name{catalog=msn, schema=null}]
+2024-05-18 20:14:34 DEBUG EntityBinder:874 - Bind entity test.msn.Entities.Users1 on table users1
+2024-05-18 20:14:34 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(msn.users1), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2024-05-18 20:14:34 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [test.msn.Entities.Users1] is safe
+2024-05-18 20:14:34 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : test.msn.Entities.Users1
+2024-05-18 20:14:34 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+2024-05-18 20:14:34 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [test.msn.Entities.Users1:id]
+2024-05-18 20:14:34 DEBUG SimpleValueBinder:410 - building SimpleValue for id
+2024-05-18 20:14:34 DEBUG PropertyBinder:266 - Building property id
+2024-05-18 20:14:34 DEBUG BinderHelper:514 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2024-05-18 20:14:34 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(msn.users1), mappingColumn=age, insertable=true, updatable=true, unique=false}
+2024-05-18 20:14:34 DEBUG PropertyBinder:175 - MetadataSourceProcessor property age with lazy=false
+2024-05-18 20:14:34 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [test.msn.Entities.Users1:age]
+2024-05-18 20:14:34 DEBUG SimpleValueBinder:410 - building SimpleValue for age
+2024-05-18 20:14:34 DEBUG PropertyBinder:266 - Building property age
+2024-05-18 20:14:34 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(msn.users1), mappingColumn=password, insertable=true, updatable=true, unique=false}
+2024-05-18 20:14:34 DEBUG PropertyBinder:175 - MetadataSourceProcessor property password with lazy=false
+2024-05-18 20:14:34 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [test.msn.Entities.Users1:password]
+2024-05-18 20:14:34 DEBUG SimpleValueBinder:410 - building SimpleValue for password
+2024-05-18 20:14:34 DEBUG PropertyBinder:266 - Building property password
+2024-05-18 20:14:34 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(msn.users1), mappingColumn=username, insertable=true, updatable=true, unique=false}
+2024-05-18 20:14:34 DEBUG PropertyBinder:175 - MetadataSourceProcessor property username with lazy=false
+2024-05-18 20:14:34 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [test.msn.Entities.Users1:username]
+2024-05-18 20:14:34 DEBUG SimpleValueBinder:410 - building SimpleValue for username
+2024-05-18 20:14:34 DEBUG PropertyBinder:266 - Building property username
+2024-05-18 20:14:34 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for id
+2024-05-18 20:14:34 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for age
+2024-05-18 20:14:34 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for password
+2024-05-18 20:14:34 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for username
+2024-05-18 20:14:34 DEBUG PrimaryKey:36 - Forcing column [id] to be non-null as it is part of the primary key for table [users1]
+2024-05-18 20:14:34 DEBUG SessionFactoryImpl:208 - Building session factory
+2024-05-18 20:14:34 DEBUG Settings:68 - SessionFactory name : null
+2024-05-18 20:14:34 DEBUG Settings:69 - Automatic flush during beforeCompletion(): enabled
+2024-05-18 20:14:34 DEBUG Settings:70 - Automatic session close at end of transaction: disabled
+2024-05-18 20:14:34 DEBUG Settings:72 - Statistics: disabled
+2024-05-18 20:14:34 DEBUG Settings:74 - Deleted entity synthetic identifier rollback: disabled
+2024-05-18 20:14:34 DEBUG Settings:75 - Default entity-mode: pojo
+2024-05-18 20:14:34 DEBUG Settings:76 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2024-05-18 20:14:34 DEBUG Settings:77 - Allow initialization of lazy state outside session : disabled
+2024-05-18 20:14:34 DEBUG Settings:79 - Using BatchFetchStyle : LEGACY
+2024-05-18 20:14:34 DEBUG Settings:80 - Default batch fetch size: -1
+2024-05-18 20:14:34 DEBUG Settings:81 - Maximum outer join fetch depth: 2
+2024-05-18 20:14:34 DEBUG Settings:82 - Default null ordering: NONE
+2024-05-18 20:14:34 DEBUG Settings:83 - Order SQL updates by primary key: disabled
+2024-05-18 20:14:34 DEBUG Settings:84 - Order SQL inserts for batching: disabled
+2024-05-18 20:14:34 DEBUG Settings:86 - multi-tenancy strategy : NONE
+2024-05-18 20:14:34 DEBUG Settings:88 - JTA Track by Thread: enabled
+2024-05-18 20:14:34 DEBUG Settings:90 - Query language substitutions: {}
+2024-05-18 20:14:34 DEBUG Settings:91 - Named query checking : enabled
+2024-05-18 20:14:34 DEBUG Settings:93 - Second-level cache: disabled
+2024-05-18 20:14:34 DEBUG Settings:94 - Second-level query cache: disabled
+2024-05-18 20:14:34 DEBUG Settings:95 - Second-level query cache factory: null
+2024-05-18 20:14:34 DEBUG Settings:96 - Second-level cache region prefix: null
+2024-05-18 20:14:34 DEBUG Settings:97 - Optimize second-level cache for minimal puts: disabled
+2024-05-18 20:14:34 DEBUG Settings:98 - Structured second-level cache entries: disabled
+2024-05-18 20:14:34 DEBUG Settings:99 - Second-level cache direct-reference entries: disabled
+2024-05-18 20:14:34 DEBUG Settings:100 - Automatic eviction of collection cache: disabled
+2024-05-18 20:14:34 DEBUG Settings:102 - JDBC batch size: 15
+2024-05-18 20:14:34 DEBUG Settings:103 - JDBC batch updates for versioned data: enabled
+2024-05-18 20:14:34 DEBUG Settings:104 - Scrollable result sets: enabled
+2024-05-18 20:14:34 DEBUG Settings:105 - Wrap result sets: disabled
+2024-05-18 20:14:34 DEBUG Settings:106 - JDBC3 getGeneratedKeys(): enabled
+2024-05-18 20:14:34 DEBUG Settings:107 - JDBC result set fetch size: null
+2024-05-18 20:14:34 DEBUG Settings:108 - Connection release mode: ON_CLOSE
+2024-05-18 20:14:34 DEBUG Settings:109 - Generate SQL with comments: disabled
+2024-05-18 20:14:34 DEBUG Settings:111 - JPA compliance - query : disabled
+2024-05-18 20:14:34 DEBUG Settings:112 - JPA compliance - closed-handling : disabled
+2024-05-18 20:14:34 DEBUG Settings:113 - JPA compliance - lists : disabled
+2024-05-18 20:14:34 DEBUG Settings:114 - JPA compliance - transactions : disabled
+2024-05-18 20:14:34 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-05-18 20:14:34 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-05-18 20:14:34 DEBUG SessionFactoryImpl:276 - Session factory constructed with filter configurations : {}
+2024-05-18 20:14:34 DEBUG SessionFactoryImpl:277 - Instantiating session factory with properties: {awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@5d79da0c, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.class.path=/usr/share/tomcat9/bin/bootstrap.jar:/usr/share/tomcat9/bin/tomcat-juli.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, java.vendor.url=https://ubuntu.com/, catalina.useNaming=true, user.timezone=Asia/Jakarta, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=org.apache.catalina.startup.Bootstrap start, jdk.debug=release, sun.cpu.endian=little, user.home=/root, user.language=en, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming, java.version.date=2024-01-16, java.home=/usr/lib/jvm/java-11-openjdk-amd64, ignore.endorsed.dirs=, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.awt.headless=true, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., jdk.tls.ephemeralDHKeySize=2048, server.loader=, java.util.logging.config.file=/var/lib/tomcat9/conf/logging.properties, java.protocol.handler.pkgs=org.apache.catalina.webresources, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.22+7-post-Ubuntu-0ubuntu222.04.1, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, user.name=root, path.separator=:, common.loader="/var/lib/tomcat9/lib","/var/lib/tomcat9/lib/*.jar","/usr/share/tomcat9/lib","/usr/share/tomcat9/lib/*.jar", hibernate.connection.username=****, os.version=6.5.0-1023-oracle, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/msn, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.classLoaders=[ParallelWebappClassLoader
+  context: TestMsn
+  delegate: false
+----------> Parent Classloader:
+java.net.URLClassLoader@68de145
+], hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext, org.apache.catalina.security.SecurityListener.UMASK=0027, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, catalina.home=/usr/share/tomcat9, java.version=11.0.22, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher.jar,ant.jar,asm-*.jar,aspectj*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-ssi.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,derby-*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,websocket-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, user.dir=/var/lib/tomcat9, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, catalina.base=/var/lib/tomcat9, shared.loader=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@75fe8e79, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.22+7-post-Ubuntu-0ubuntu222.04.1, java.specification.maintenance.version=2, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.datasource=org.springframework.jdbc.datasource.DriverManagerDataSource@5563ed52, tomcat.util.buf.StringCache.byte.enabled=true, java.class.version=55.0}
+2024-05-18 20:14:34 DEBUG JaccIntegrator:84 - Skipping JACC integration as it was not enabled
+2024-05-18 20:14:34 DEBUG SessionFactoryImpl:316 - Instantiated session factory
+2024-05-18 20:14:34 DEBUG TypeConfiguration$Scope:154 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@41b26e0e] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@5c6deda]
+2024-05-18 20:14:34 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [test.msn.Entities.Users1] is safe
+2024-05-18 20:14:34 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : test.msn.Entities.Users1
+2024-05-18 20:14:34 DEBUG AbstractEntityPersister:4002 - Static SQL for entity: test.msn.Entities.Users1
+2024-05-18 20:14:34 DEBUG AbstractEntityPersister:4007 -  Version select: select id from msn.users1 where id =?
+2024-05-18 20:14:34 DEBUG AbstractEntityPersister:4010 -  Snapshot select: select users1x_.id, users1x_.age as age2_0_, users1x_.password as password3_0_, users1x_.username as username4_0_ from msn.users1 users1x_ where users1x_.id=?
+2024-05-18 20:14:34 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into msn.users1 (age, password, username, id) values (?, ?, ?, ?)
+2024-05-18 20:14:34 DEBUG AbstractEntityPersister:394 -  Update 0: update msn.users1 set age=?, password=?, username=? where id=?
+2024-05-18 20:14:34 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from msn.users1 where id=?
+2024-05-18 20:14:34 DEBUG AbstractEntityPersister:4018 -  Identity insert: insert into msn.users1 (age, password, username) values (?, ?, ?)
+2024-05-18 20:14:34 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52d5e2d9]
+2024-05-18 20:14:34 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : age
+2024-05-18 20:14:34 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : password
+2024-05-18 20:14:34 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : username
+2024-05-18 20:14:34 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2024-05-18 20:14:34 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2024-05-18 20:14:34 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=test.msn.Entities.Users1)
+    - Returns
+       - EntityReturnImpl(entity=test.msn.Entities.Users1, querySpaceUid=<gen:0>, path=test.msn.Entities.Users1)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=test.msn.Entities.Users1)
+          - SQL table alias mapping - users1x0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2024-05-18 20:14:34 DEBUG EntityLoader:129 - Static select for entity test.msn.Entities.Users1 [NONE]: select users1x0_.id as id1_0_0_, users1x0_.age as age2_0_0_, users1x0_.password as password3_0_0_, users1x0_.username as username4_0_0_ from msn.users1 users1x0_ where users1x0_.id=?
+2024-05-18 20:14:34 DEBUG SchemaManagementToolCoordinator:65 - No actions specified; doing nothing
+2024-05-18 20:14:34 DEBUG JtaPlatformInitiator:43 - No JtaPlatform was specified, checking resolver
+2024-05-18 20:14:34 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2024-05-18 20:14:34 DEBUG StandardJtaPlatformResolver:137 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-18 20:14:34 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-18 20:14:34 DEBUG NamedQueryRepository:171 - Checking 0 named HQL queries
+2024-05-18 20:14:34 DEBUG NamedQueryRepository:185 - Checking 0 named SQL queries
+2024-05-18 20:14:34 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2024-05-18 20:14:34 DEBUG SessionFactoryRegistry:51 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@3e068334
+2024-05-18 20:14:34 DEBUG SessionFactoryRegistry:73 - Registering SessionFactory: faed6880-7025-4084-9d81-bf8dc41d87e7 (<unnamed>)
+2024-05-18 20:14:34 DEBUG SessionFactoryRegistry:80 - Not binding SessionFactory to JNDI, no JNDI name configured
+2024-05-18 20:14:48 DEBUG StatisticsInitiator:101 - Statistics initialized [enabled=false]
+2024-05-18 20:14:48 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-05-18 20:14:48 DEBUG TransactionImpl:81 - begin
+2024-05-18 20:14:48 DEBUG CriteriaQueryImpl:303 - Rendered criteria query -> select generatedAlias0 from Users1 as generatedAlias0 where generatedAlias0.username=:param0
+2024-05-18 20:14:48 DEBUG QueryTranslatorFactoryInitiator:45 - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@71fb2948
+2024-05-18 20:14:48 DEBUG QueryTranslatorImpl:292 - parse() - HQL: select generatedAlias0 from test.msn.Entities.Users1 as generatedAlias0 where generatedAlias0.username=:param0
+2024-05-18 20:14:48 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2024-05-18 20:14:48 DEBUG QueryTranslatorImpl:313 - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'test'
+    |  |     |  |  |  \-[IDENT] Node: 'msn'
+    |  |     |  |  \-[IDENT] Node: 'Entities'
+    |  |     |  \-[IDENT] Node: 'Users1'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'username'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+2024-05-18 20:14:48 DEBUG HqlSqlBaseWalker:129 - select << begin [level=1, statement=select]
+2024-05-18 20:14:48 DEBUG FromElement:153 - FromClause{level=1} : test.msn.Entities.Users1 (generatedAlias0) -> users1x0_
+2024-05-18 20:14:48 DEBUG FromReferenceNode:60 - Resolved : generatedAlias0 -> users1x0_.id
+2024-05-18 20:14:48 DEBUG FromReferenceNode:60 - Resolved : generatedAlias0 -> users1x0_.id
+2024-05-18 20:14:48 DEBUG DotNode:696 - getDataType() : username -> org.hibernate.type.StringType@1056b4bb
+2024-05-18 20:14:48 DEBUG FromReferenceNode:60 - Resolved : generatedAlias0.username -> users1x0_.username
+2024-05-18 20:14:48 DEBUG HqlSqlBaseWalker:133 - select : finishing up [level=1, statement=select]
+2024-05-18 20:14:48 DEBUG HqlSqlWalker:762 - processQuery() :  ( SELECT ( {select clause} users1x0_.id ) ( FromClause{level=1} msn.users1 users1x0_ ) ( where ( = ( users1x0_.username users1x0_.id username ) ? ) ) )
+2024-05-18 20:14:48 DEBUG JoinProcessor:129 - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Users1): [msn.users1]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(test.msn.Entities.Users1)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-DotNode
+          | persister: SingleTableEntityPersister(test.msn.Entities.Users1)
+          | path: generatedAlias0.username
+          |  +-IdentNode
+          |  | persister: SingleTableEntityPersister(test.msn.Entities.Users1)
+          |  | originalText: generatedAlias0
+          |  \-IdentNode
+          |    persister: null
+          |    originalText: username
+          \-ParameterNode
+
+2024-05-18 20:14:48 DEBUG JoinProcessor:304 - Using FROM fragment [msn.users1 users1x0_]
+2024-05-18 20:14:48 DEBUG HqlSqlBaseWalker:137 - select >> end [level=1, statement=select]
+2024-05-18 20:14:48 DEBUG QueryTranslatorImpl:279 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (msn.users1)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'users1x0_.id as id1_0_' {alias=generatedAlias0, className=test.msn.Entities.Users1, tableAlias=users1x0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'users1x0_.age as age2_0_, users1x0_.password as password3_0_, users1x0_.username as username4_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[users1x0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'msn.users1 users1x0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=msn.users1,tableAlias=users1x0_,origin=null,columns={,className=test.msn.Entities.Users1}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'users1x0_.username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path=generatedAlias0.username,tableAlias=users1x0_,className=test.msn.Entities.Users1,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'users1x0_.id' {alias=generatedAlias0, className=test.msn.Entities.Users1, tableAlias=users1x0_}
+          |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@1056b4bb}
+
+2024-05-18 20:14:48 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2024-05-18 20:14:48 DEBUG QueryTranslatorImpl:258 - HQL: select generatedAlias0 from test.msn.Entities.Users1 as generatedAlias0 where generatedAlias0.username=:param0
+2024-05-18 20:14:48 DEBUG QueryTranslatorImpl:259 - SQL: select users1x0_.id as id1_0_, users1x0_.age as age2_0_, users1x0_.password as password3_0_, users1x0_.username as username4_0_ from msn.users1 users1x0_ where users1x0_.username=?
+2024-05-18 20:14:48 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2024-05-18 20:14:48 DEBUG SQL:144 - select users1x0_.id as id1_0_, users1x0_.age as age2_0_, users1x0_.password as password3_0_, users1x0_.username as username4_0_ from msn.users1 users1x0_ where users1x0_.username=?
+2024-05-18 20:14:48 DEBUG Loader:384 - Result set row: 0
+2024-05-18 20:14:48 DEBUG Loader:1595 - Result row: EntityKey[test.msn.Entities.Users1#1]
+2024-05-18 20:14:48 DEBUG TwoPhaseLoad:171 - Resolving attributes for [test.msn.Entities.Users1#1]
+2024-05-18 20:14:48 DEBUG TwoPhaseLoad:184 - Processing attribute `age` : value = 0
+2024-05-18 20:14:48 DEBUG TwoPhaseLoad:215 - Attribute (`age`)  - enhanced for lazy-loading? - false
+2024-05-18 20:14:48 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = $2a$10$EOwYHVn9rYTi9XskJ0ibjepmYn6a8a1W1AfjQO2ysoCR9VmCEjE52
+2024-05-18 20:14:48 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-05-18 20:14:48 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = user@mail.com
+2024-05-18 20:14:48 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2024-05-18 20:14:48 DEBUG TwoPhaseLoad:352 - Done materializing entity [test.msn.Entities.Users1#1]
+2024-05-18 20:14:48 DEBUG TransactionImpl:98 - committing
+2024-05-18 20:14:48 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2024-05-18 20:14:48 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2024-05-18 20:14:48 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2024-05-18 20:14:48 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2024-05-18 20:14:48 DEBUG EntityPrinter:110 - Listing entities:
+2024-05-18 20:14:48 DEBUG EntityPrinter:117 - test.msn.Entities.Users1{password=$2a$10$EOwYHVn9rYTi9XskJ0ibjepmYn6a8a1W1AfjQO2ysoCR9VmCEjE52, id=1, age=0, username=user@mail.com}
+2024-05-18 20:15:36 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-05-18 20:15:36 DEBUG TransactionImpl:81 - begin
+2024-05-18 20:15:36 DEBUG SQL:144 - call stored_users1(?, ?, ?)
+2024-05-18 20:15:36 DEBUG SQL:144 - SELECT LAST_INSERT_ID()
+2024-05-18 20:15:36 DEBUG Loader:384 - Result set row: 0
+2024-05-18 20:15:36 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:15:36 DEBUG TransactionImpl:98 - committing
+2024-05-18 20:15:36 INFO  HomeController:105 - register user: evy@mail.com berhasil.
+2024-05-18 20:15:47 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-05-18 20:15:47 DEBUG TransactionImpl:81 - begin
+2024-05-18 20:15:47 DEBUG CriteriaQueryImpl:303 - Rendered criteria query -> select generatedAlias0 from Users1 as generatedAlias0 where generatedAlias0.username=:param0
+2024-05-18 20:15:47 DEBUG SQL:144 - select users1x0_.id as id1_0_, users1x0_.age as age2_0_, users1x0_.password as password3_0_, users1x0_.username as username4_0_ from msn.users1 users1x0_ where users1x0_.username=?
+2024-05-18 20:15:47 DEBUG Loader:384 - Result set row: 0
+2024-05-18 20:15:47 DEBUG Loader:1595 - Result row: EntityKey[test.msn.Entities.Users1#15]
+2024-05-18 20:15:47 DEBUG TwoPhaseLoad:171 - Resolving attributes for [test.msn.Entities.Users1#15]
+2024-05-18 20:15:47 DEBUG TwoPhaseLoad:184 - Processing attribute `age` : value = 18
+2024-05-18 20:15:47 DEBUG TwoPhaseLoad:215 - Attribute (`age`)  - enhanced for lazy-loading? - false
+2024-05-18 20:15:47 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = $2a$10$Np1iZGDlshEq9hlXqBUVV.2nn5EEaOuoWx3VaRbm8EpaZrx23TN9q
+2024-05-18 20:15:47 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2024-05-18 20:15:47 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = evy@mail.com
+2024-05-18 20:15:47 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2024-05-18 20:15:47 DEBUG TwoPhaseLoad:352 - Done materializing entity [test.msn.Entities.Users1#15]
+2024-05-18 20:15:47 DEBUG TransactionImpl:98 - committing
+2024-05-18 20:15:47 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2024-05-18 20:15:47 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2024-05-18 20:15:47 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2024-05-18 20:15:47 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2024-05-18 20:15:47 DEBUG EntityPrinter:110 - Listing entities:
+2024-05-18 20:15:47 DEBUG EntityPrinter:117 - test.msn.Entities.Users1{password=$2a$10$Np1iZGDlshEq9hlXqBUVV.2nn5EEaOuoWx3VaRbm8EpaZrx23TN9q, id=15, age=18, username=evy@mail.com}
+2024-05-18 20:16:07 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-05-18 20:16:07 DEBUG TransactionImpl:81 - begin
+2024-05-18 20:16:07 DEBUG SQL:144 - call view_users1()
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 0
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 1
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 2
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 3
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 4
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 5
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 6
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 7
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 8
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 9
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 10
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG Loader:384 - Result set row: 11
+2024-05-18 20:16:07 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:16:07 DEBUG TransactionImpl:98 - committing
+2024-05-18 20:16:07 INFO  HomeController:57 - access view data.
+2024-05-18 20:17:01 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2024-05-18 20:17:01 DEBUG TransactionImpl:81 - begin
+2024-05-18 20:17:01 DEBUG SQL:144 - call view_users1()
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 0
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 1
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 2
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 3
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 4
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 5
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 6
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 7
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 8
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 9
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 10
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG Loader:384 - Result set row: 11
+2024-05-18 20:17:01 DEBUG Loader:1595 - Result row: 
+2024-05-18 20:17:01 DEBUG TransactionImpl:98 - committing
+2024-05-18 20:17:01 INFO  HomeController:57 - access view data.

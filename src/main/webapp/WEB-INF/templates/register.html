@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        .error {
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register page</h1>
+
+    <th:block th:if="${message}">
+        <div class="error" th:utext="${message}">&nbsp;</div>
+    </th:block>
+    <br />
+
+    <form name='register' th:action="@{/registerp}" method='POST'>
+        <table>
+            <tr>
+                <td>UserName:</td>
+                <td><input type='text' name='username' value=''></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type='password' name='password' /></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type='password' name='repassword' /></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <select name="age">
+                        <option th:each="a : ${#numbers.sequence(18, 100)}" th:value="${a}" th:text="${a}">Age</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input name="submit" type="submit" value="Register" /></td>
+                <td>
+                    <a th:href="@{/login}"><button type="button" name="log">Back to login</button></a>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
