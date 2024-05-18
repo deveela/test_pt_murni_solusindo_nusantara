@@ -16,6 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `emotions`
+--
+
+DROP TABLE IF EXISTS `emotions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `emotions` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `score` int NOT NULL,
+  `emotion` enum('Happy','Sad','Angry') DEFAULT NULL,
+  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `emotions`
+--
+
+LOCK TABLES `emotions` WRITE;
+/*!40000 ALTER TABLE `emotions` DISABLE KEYS */;
+INSERT INTO `emotions` VALUES (1,'Kevin',80,'Happy','2020-02-20 07:00:00'),(2,'Josh',90,'Sad','2020-02-20 07:00:00'),(3,'Kevin',85,'Happy','2020-02-20 07:00:00'),(4,'Kevin',75,'Sad','2020-02-20 07:00:00'),(5,'Josh',65,'Angry','2020-02-20 07:00:00'),(6,'David',85,'Happy','2020-02-21 07:00:00'),(7,'Josh',90,'Sad','2020-02-21 07:00:00'),(8,'David',75,'Sad','2020-02-21 07:00:00'),(9,'Josh',85,'Sad','2020-02-21 07:00:00'),(10,'Josh',70,'Happy','2020-02-21 07:00:00'),(11,'Kevin',80,'Sad','2020-02-21 07:00:00'),(12,'Kevin',73,'Sad','2020-02-22 07:00:00'),(13,'Kevin',75,'Angry','2020-02-22 07:00:00'),(14,'David',82,'Sad','2020-02-22 07:00:00'),(15,'David',65,'Sad','2020-02-22 07:00:00');
+/*!40000 ALTER TABLE `emotions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users1`
 --
 
@@ -28,7 +55,7 @@ CREATE TABLE `users1` (
   `password` varchar(255) NOT NULL,
   `age` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,9 +64,55 @@ CREATE TABLE `users1` (
 
 LOCK TABLES `users1` WRITE;
 /*!40000 ALTER TABLE `users1` DISABLE KEYS */;
-INSERT INTO `users1` VALUES (1,'user@mail.com','$2a$10$EOwYHVn9rYTi9XskJ0ibjepmYn6a8a1W1AfjQO2ysoCR9VmCEjE52',0),(2,'user_admin@mail.com','$2a$10$EOwYHVn9rYTi9XskJ0ibjepmYn6a8a1W1AfjQO2ysoCR9VmCEjE52',0),(3,'noc@mail.com','$2a$10$BMLqnw.MHvlTcPYEpgk.POf5uACZXnLWP5is/FwUYV3E3pdsO4Bp6',0),(4,'sva@mail.com','$2a$10$pSl3RgKHHJfcnFQj/7LHcO8Kt.gho.vHCJzek44SOOl0a058kU8Pe',0),(8,'rina@mail.com','$2a$10$oV5xx1wwwZM8q9fh23.XTe1vXuEOMwdzyHeDm3hogqBCuhA8Hp4lW',18),(9,'eri@mail.com','$2a$10$AN/hqUaTREHWKGQTJQuHW.y4l7UktY6/DeIQavTXEANSq9/Oy3Dwa',18),(10,'tamil@mail.com','$2a$10$Q5dywlK7oKxd/q7ROdHZKugYO7BV.iDjsa7MOaFjiOYvBMIi.6eGy',18),(11,'amar@mail.com','$2a$10$dvjFNPJI9h91D9DcYml4qO09nOwGvvujn2eTrWkmcW/uYIKqFnKSi',18),(12,'komo@mail.com','$2a$10$hqTImv/XMXsxf8ZkZtVPueMCzvL7fXy6hzmTCmY.8nSCJut8CTDve',18);
 /*!40000 ALTER TABLE `users1` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'msn'
+--
+/*!50003 DROP PROCEDURE IF EXISTS `stored_users1` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `stored_users1`(user varchar(200), pass varchar(255), umur int(3))
+begin
+    if not exists(select * from users1 a where a.username = user) then
+        insert into users1(username, password, age) values (user, pass, umur);
+        select 'success';
+    else
+        select concat(user, ' exists');
+    end if;
+end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `view_users1` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `view_users1`()
+begin
+    select a.id, a.username, a.age from users1 a order by a.id desc ;
+end ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -50,4 +123,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-18  0:57:08
+-- Dump completed on 2024-05-18 21:23:28
