@@ -10,45 +10,76 @@
             padding: 10px;
         }
     </style>
+    <link th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" rel="stylesheet" />
+    <script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+    <script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.bundle.min.js}"></script>
 </head>
 <body>
-    <h1>Register page</h1>
-
+<div class="container">
     <th:block th:if="${message}">
-        <div class="error" th:utext="${message}">&nbsp;</div>
+        <div class="alert alert-info" role="alert" th:utext="${message}">
+            Message
+        </div>
     </th:block>
+
+    <div class="row">
+        <h1>Register page</h1>
+    </div>
+
     <br />
 
-    <form name='register' th:action="@{/registerp}" method='POST'>
-        <table>
-            <tr>
-                <td>UserName:</td>
-                <td><input type='text' name='username' value=''></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><input type='password' name='password' /></td>
-            </tr>
-            <tr>
-                <td>Confirm Password:</td>
-                <td><input type='password' name='repassword' /></td>
-            </tr>
-            <tr>
-                <td>Age:</td>
-                <td>
-                    <select name="age">
+    <div class="row">
+        <form name='register' th:action="@{/registerp}" method='POST'>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label>Username :</label>
+                </div>
+                <div class="input-group col-md-6" id="iusername" data-target-input="nearest">
+                    <input class="form-conrol" type="text" name="username" placeholder="Username">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label>Password :</label>
+                </div>
+                <div class="input-group col-md-6" id="ipassword" data-target-input="nearest">
+                    <input class="form-conrol" type="password" name="password" placeholder="Password">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label>Confirm Password :</label>
+                </div>
+                <div class="input-group col-md-6" id="irepassword" data-target-input="nearest">
+                    <input class="form-conrol" type="password" name="repassword" placeholder="Confirm Password">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label>Age :</label>
+                </div>
+                <div class="input-group col-md-6" id="iage" data-target-input="nearest">
+                    <select class="form-control" name="age">
                         <option th:each="a : ${#numbers.sequence(18, 100)}" th:value="${a}" th:text="${a}">Age</option>
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <td><input name="submit" type="submit" value="Register" /></td>
-                <td>
-                    <a th:href="@{/login}"><button type="button" name="log">Back to login</button></a>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
 
-    </form>
+            <div class="form-group row">
+                <div class="col-md-4">
+                    <button class="btn btn-primary" name="submit" type="submit">Register</button>
+                </div>
+                <div class="col-md-8">
+                    <a class="btn btn-primary" th:href="@{/login}">Back to login</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
