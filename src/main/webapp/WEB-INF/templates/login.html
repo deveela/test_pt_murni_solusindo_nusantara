@@ -9,13 +9,18 @@
             padding: 10px;
             font-weight: bold;
         }
+		.error {
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
 	</style>
 </head>
 <body>
 	<h1>Login page</h1>
 
-	<th:block th:if="${message}">
-		<div class="success" th:utext="${message}">&nbsp;</div>
+	<th:block th:if="${error}">
+		<div class="error" th:utext="${error}">&nbsp;</div>
 	</th:block>
 	<br />
 

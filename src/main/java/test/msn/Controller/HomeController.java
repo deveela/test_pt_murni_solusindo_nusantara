@@ -37,7 +37,14 @@ public class HomeController {
     }
 	
 	@GetMapping("/login")
-	public String login() {
+	public String login(@RequestParam(value = "error", required = false) String error, Model model) {
+
+        if (error != null) {
+            model.addAttribute("error", "username/password tidak ditemukan.");
+            log.debug("username/password tidak ditemukan.");
+            return "login";
+        }
+
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication == null || authentication instanceof AnonymousAuthenticationToken) {
             return "login";

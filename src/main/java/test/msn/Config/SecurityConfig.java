@@ -46,7 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		httpSecurity
                 .authorizeRequests().antMatchers("/message", "/").authenticated()
 				.and()
-				.authorizeRequests().antMatchers("/login", "/resource/**").permitAll()
+				.authorizeRequests().antMatchers("/login**", "/resource/**").permitAll()
 				.and()
 				.formLogin().loginPage("/login").usernameParameter("username").passwordParameter("password").permitAll()
 				.defaultSuccessUrl("/")
